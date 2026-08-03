@@ -1,75 +1,197 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Norton Birthday v31.0.0</title>
+<title>birthday-31 | Norton</title>
 
 <style>
+
 body {
     background:#0d1117;
     color:#c9d1d9;
-    font-family:Arial;
-    padding:40px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial;
+    margin:0;
 }
 
-.box {
-    max-width:800px;
-    margin:auto;
+.header {
+    padding:25px;
+    border-bottom:1px solid #30363d;
+}
+
+.repo {
+    color:#58a6ff;
+    font-size:24px;
+}
+
+.nav {
+    margin-top:20px;
+}
+
+.nav span {
+    margin-right:25px;
+    color:#8b949e;
+}
+
+.container {
+    max-width:900px;
+    margin:40px auto;
+}
+
+.card {
     background:#161b22;
     border:1px solid #30363d;
+    border-radius:8px;
     padding:30px;
-    border-radius:10px;
+    margin-bottom:25px;
 }
 
-h1 {
+h1,h2 {
+    color:#f0f6fc;
+}
+
+.blue {
     color:#58a6ff;
 }
 
-button {
-    background:#238636;
-    color:white;
-    padding:12px 20px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
-}
-
-#message {
-    margin-top:30px;
-    font-size:25px;
+.green {
     color:#7ee787;
 }
+
+.badge {
+    background:#238636;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.commit {
+    border-left:3px solid #30363d;
+    padding-left:15px;
+    margin:15px;
+}
+
+
+button {
+
+background:#238636;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+
+#result {
+
+text-align:center;
+font-size:30px;
+margin-top:30px;
+color:#7ee787;
+
+}
+
+
+pre {
+
+background:#010409;
+padding:20px;
+border-radius:8px;
+color:#79c0ff;
+
+}
+
+
 </style>
 
 </head>
 
+
 <body>
 
-<div class="box">
 
-<h1>📦 jasmine / birthday-31</h1>
+<div class="header">
 
-<h2>Happy Birthday Norton 🎉</h2>
+<div class="repo">
+
+📦 skwky9pmdc-lgtm / <b>birthday-31</b>
+
+</div>
+
+
+<div class="nav">
+
+<span>Code</span>
+<span>Issues</span>
+<span>Pull requests</span>
+<span>Actions</span>
+
+</div>
+
+</div>
+
+
+
+
+<div class="container">
+
+
+<div class="card">
+
+<h1>
+🎉 Happy Birthday Norton
+</h1>
+
 
 <p>
 A special release created by Jasmine ❤️
 </p>
 
-<hr>
 
-<h3>Current Version</h3>
+<span class="badge">
+Java ☕
+</span>
 
-<h2>v31.0.0</h2>
 
-<h3>✨ Added</h3>
+<span class="badge">
+v31.0.0
+</span>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>README.md</h2>
+
+
+<h3 class="green">
+✨ Added
+</h3>
+
 
 <ul>
+
+<li>Birthday cake 🎂</li>
+
 <li>Surprise gift 🎁</li>
-<li>Unlimited hugs ❤️</li>
+
 <li>More adventures together 🚗</li>
+
+<li>Unlimited love ❤️</li>
+
 </ul>
 
 
-<h3>☕ Java Module</h3>
+<h3 class="green">
+☕ Java Module
+</h3>
+
 
 <pre>
 
@@ -77,7 +199,9 @@ public class Birthday {
 
     public static void main(String[] args) {
 
-        System.out.println("Happy Birthday Norton!");
+        System.out.println(
+        "Happy Birthday Norton!"
+        );
 
     }
 
@@ -86,31 +210,126 @@ public class Birthday {
 </pre>
 
 
-<h3>Pull Request #31</h3>
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>
+Pull Request #31
+</h2>
+
+
+<h3 class="blue">
+Merge birthday-surprise into main
+</h3>
+
 
 <p>
-Merge birthday-surprise into main
+✅ Build passed
 </p>
 
+<p>
+✅ Love tests passed
+</p>
+
+<p>
+✅ Happiness test passed
+</p>
+
+
+
 <button onclick="merge()">
-Merge Pull Request
+
+Merge pull request
+
 </button>
 
 
-<div id="message"></div>
+<div id="result"></div>
 
 
 </div>
 
 
+
+
+
+<div class="card">
+
+<h2>
+Commit History
+</h2>
+
+
+<div class="commit">
+
+❤️ 6a91fc0  
+<br>
+First met Jasmine
+
+</div>
+
+
+<div class="commit">
+
+🎁 b4de931  
+<br>
+Prepared birthday surprise
+
+</div>
+
+
+<div class="commit">
+
+🎂 c7f8a21  
+<br>
+Added birthday cake
+
+</div>
+
+
+<div class="commit">
+
+🚀 31f2026  
+<br>
+Released Norton v31.0.0
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
 <script>
+
 
 function merge(){
 
-document.getElementById("message").innerHTML =
-"🎉 Merge completed successfully!<br><br>Happy 31st Birthday Norton ❤️<br><br>Love, Jasmine";
+document.getElementById("result").innerHTML=
+
+"🎉 MERGE SUCCESSFUL 🎉<br><br>" +
+
+"Norton v31.0.0 released ❤️<br><br>" +
+
+"Thank you for being my favourite person.<br><br>" +
+
+"Love, Jasmine";
+
 
 }
+
 
 </script>
 
